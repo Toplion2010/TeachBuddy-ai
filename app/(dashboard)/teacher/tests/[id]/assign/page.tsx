@@ -33,7 +33,7 @@ export default function AssignTestPage() {
         .eq('test_id', id);
 
       setStudents(allStudents || []);
-      setAssignedIds(new Set(assignments?.map((a) => a.student_id) || []));
+      setAssignedIds(new Set(assignments?.map((a: { student_id: string }) => a.student_id) || []));
       setLoading(false);
     };
 

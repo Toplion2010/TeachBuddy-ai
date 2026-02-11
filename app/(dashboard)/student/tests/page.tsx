@@ -89,8 +89,8 @@ export default function StudentTestsPage() {
               .not('completed_at', 'is', null);
 
             const scores = (attempts || [])
-              .map((att) => att.score)
-              .filter((s): s is number => s !== null);
+              .map((att: { score: number | null }) => att.score)
+              .filter((s: number | null): s is number => s !== null);
 
             return {
               ...a,
