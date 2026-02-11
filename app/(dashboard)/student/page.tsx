@@ -82,7 +82,7 @@ export default function StudentDashboard() {
       const completedAttempts = attemptsRes.data ?? [];
       const avgScore =
         completedAttempts.length > 0
-          ? completedAttempts.reduce((sum, a) => sum + (a.score ?? 0), 0) /
+          ? completedAttempts.reduce((sum: number, a: { score?: number | null }) => sum + (a.score ?? 0), 0) /
             completedAttempts.length
           : null;
 
