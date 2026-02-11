@@ -1,5 +1,7 @@
 # TeachBuddy.ai
 
+**Live Demo:** [https://teachbuddy-ai.vercel.app](https://teachbuddy-ai.vercel.app)
+
 AI-powered personalized learning platform that transforms teachers' materials into adaptive learning experiences.
 
 ## Tech Stack
